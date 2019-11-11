@@ -1,0 +1,58 @@
+.Tabs {
+  width: 100vw;
+  height: 35px;
+  display: flex;
+  background: #212327;
+  justify-content: left;
+  overflow-x: auto;
+}
+
+.Tabs::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.Tabs::-webkit-scrollbar {
+  height: 5px;
+  background-color: transparent;
+}
+
+.Tabs::-webkit-scrollbar-thumb {
+  background-color: #0005;
+}
+
+.Tabs .tab {
+  color: #cccccc;
+  width: fit-content;
+  padding: 0px 15px;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  background: #25282c;
+  font-size: 13px;
+  align-items: center;
+  justify-content: space-evenly;
+  -webkit-user-select: none;
+  border-right: 0.5px solid #212327;
+}
+
+.Tabs .tab .close {
+  padding-top: 2.5px;
+  padding-left: 10px;
+  font-family: 'Segoe MDL2 Assets';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  color: #fafafa;
+  transition: all 100ms ease-in-out;
+  font-size: 0.5rem;
+}
+
+.Tabs .tab:hover .close {
+  opacity: 1;
+}
+
+.Tabs .active {
+  color: #fafafa;
+  background: #1d1f21;
+}

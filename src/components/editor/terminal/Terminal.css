@@ -1,0 +1,99 @@
+.Terminal {
+  width: 100%;
+  background: #25282c;
+  border-top: 1px solid #212327;
+  overflow: hidden;
+}
+
+.Terminal .navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Terminal .navigator .left {
+  padding: 0px 10px;
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.Terminal .navigator .left .tab {
+  margin: 0px 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777777;
+  font-size: 0.9rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+}
+
+.Terminal .navigator .left .tab:hover {
+  color: #cccccc;
+}
+
+.Terminal .navigator .left .active {
+  color: #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.Terminal .navigator .right {
+  font-family: 'Segoe MDL2 Assets';
+  color: #777777;
+  font-size: 0.7rem;
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  -webkit-user-select: none;
+}
+
+.Terminal .navigator .right .close,
+.Terminal .navigator .right .clear {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Terminal .navigator .right .close:hover,
+.Terminal .navigator .right .clear:hover {
+  color: #ccc;
+}
+
+.Terminal .output {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  font-family: 'Consolas', monospace !important;
+  font-size: 13px;
+  color: #999999;
+  overflow-y: scroll;
+  -webkit-user-select: none;
+}
+
+.Terminal .output::selection {
+  background: #fff4;
+  color: initial;
+}
+
+.Terminal .output::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.Terminal .output::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+.Terminal .output::-webkit-scrollbar-thumb {
+  background-color: #0005;
+}

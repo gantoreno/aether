@@ -1,0 +1,25 @@
+.Editor {
+  width: 100vw;
+  height: 100vh;
+  background: #1d1f21;
+  overflow: hidden;
+}
+
+.editor-window {
+  font-size: 13px;
+  font-weight: normal !important;
+  font-family: 'Consolas', monospace;
+}
+.ace-content {
+  width: 100%;
+}
+
+.ace_scrollbar {
+  width: 0;
+  display: none;
+}
+
+::selection {
+  color: initial;
+  background: #3333;
+}
