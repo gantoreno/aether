@@ -1,5 +1,7 @@
 # Aether IDE
 
+[![CircleCI](https://circleci.com/gh/hollandsgabe/aether-ide.svg?style=shield)](https://circleci.com/gh/hollandsgabe/aether-ide)
+
 A JavaScript-based interactive code editor that performs code analysis, and runs on [Electron](https://electronjs.org/).
 
 ## Usage
