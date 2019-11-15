@@ -38,7 +38,7 @@ export class Titlebar extends Component {
   };
 
   minimize = () => {
-    window.moveTo(-100000, -100000);
+    //
   };
 
   render() {
