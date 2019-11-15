@@ -186,9 +186,6 @@ export class Terminal extends Component {
             <span className='clear play' onClick={this.onCompile}>
               &#xE768;
             </span>
-            <span className='clear' onClick={this.onClearOutput}>
-              &#xE700;
-            </span>
             <span className='close' onClick={this.props.onTerminalToggle}>
               &#xE8BB;
             </span>
