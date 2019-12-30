@@ -1,17 +1,17 @@
-const esprima = require('esprima');
+import { tokenize, parseScript } from 'esprima';
 
-exports.lexical = program => {
+export function lexical(program) {
   try {
-    return esprima.tokenize(program);
+    return tokenize(program);
   } catch (e) {
     return {};
   }
-};
+}
 
-exports.syntax = program => {
+export function syntax(program) {
   try {
-    return esprima.parseScript(program);
+    return parseScript(program);
   } catch (e) {
     return {};
   }
-};
+}
