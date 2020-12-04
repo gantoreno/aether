@@ -9,7 +9,7 @@ A JavaScript-based interactive code editor that performs code analysis, and runs
 To start working in this project, clone this repository:
 
 ```sh
-$ git clone https://github.com/hollandsgabe/aether-ide.git
+$ git clone https://github.com/gantoreno/aether-ide.git
 $ cd aether-ide
 ```
 
